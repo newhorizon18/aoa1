@@ -3,22 +3,6 @@
 
 **Created By:** Krish Mhatre
 
-## Aim
-To implement Insertion Sort using C.
-
-## Theory
-Insertion Sort is a simple sorting algorithm that arranges elements in ascending order.
-
-It works by taking one element at a time and inserting it into its correct position in the sorted part of the array.
-
-## Algorithm
-1. Start from the second element.
-2. Store the current element in `key`.
-3. Compare `key` with previous elements.
-4. Shift larger elements one position to the right.
-5. Insert `key` at its correct position.
-6. Repeat until the array is sorted.
-
 ## C Program
 
 ```c
@@ -47,6 +31,7 @@ int main() {
             a[j + 1] = a[j];
             j--;
         }
+
         a[j + 1] = key;
     }
 
@@ -58,39 +43,65 @@ int main() {
 }
 ```
 
-## How to Run
+## Terminal Input (Copy and Paste)
 
-**Step 1:** Save the file as `insertion.c`.
-
-**Step 2:** Open the terminal and compile:
-
-```bash
-gcc insertion.c -o insertion
-```
-
-**Step 3:** Run the program in PowerShell:
-
-```powershell
-.\insertion
+```text
+6
+12 5 18 2 9 7
 ```
 
 ## Output
 
 ```text
+PS C:\AOA> gcc insertion.c -o insertion
+PS C:\AOA> .\insertion.exe
+
 Enter number of elements: 6
 Enter elements: 12 5 18 2 9 7
+
 Sorted Array: 2 5 7 9 12 18
 ```
 
+## Aim
+To implement Insertion Sort using C.
+
+## Theory
+Insertion Sort is a simple sorting algorithm that arranges elements in ascending order.
+
+It works by taking one element at a time and inserting it into its correct position in the sorted part of the array.
+
+## Algorithm
+1. Start from the second element.
+2. Store the current element in key.
+3. Compare it with previous elements.
+4. Shift larger elements to the right.
+5. Insert the key at the correct position.
+6. Repeat until the array is sorted.
+
+## How to Run
+
+Save as `insertion.c`.
+
+Compile:
+
+```bash
+gcc insertion.c -o insertion
+```
+
+Run:
+
+```powershell
+.\insertion.exe
+```
+
+Paste the input from the Terminal Input section.
+
 ## Time Complexity
 
-| Case | Complexity |
-|------|------------|
-| Best Case | O(n) |
-| Average Case | O(n²) |
-| Worst Case | O(n²) |
-
-**Space Complexity:** O(1)
+- Best Case: O(n)
+- Average Case: O(n²)
+- Worst Case: O(n²)
+- Space Complexity: O(1)
 
 ## Conclusion
 Successfully implemented Insertion Sort in C to arrange the given elements in ascending order.
